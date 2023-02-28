@@ -1,0 +1,41 @@
+body {
+  background-color: #222831;
+  color: white;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  color: #00ADB5;
+  letter-spacing: 5px;
+}
+
+.paginas {
+  color: #00ADB5;
+  padding: 15px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.paginas, .paginas::after, .paginas::before{
+  transition: .5s;
+}
+
+.paginas:hover{
+  color: #15cdd6;
+}
+
+
+.carrito {
+  color: #00ADB5;
+}
+
+.titulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
