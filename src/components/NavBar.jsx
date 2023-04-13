@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -21,7 +22,7 @@ export default function NavBar() {
             <Nav.Link className='paginas' href="/category/hardware">Hardware</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <CartWidget/>
+        <Link to='/cart'><CartWidget/></Link>
       </Container>
     </Navbar>
     </>

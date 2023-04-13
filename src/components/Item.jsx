@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { useCartContext } from '../components/CartContext'
+
 
 
 const Item = ({ info }) => {
+
+
   return (
 
     <section className="slider">
@@ -14,7 +18,7 @@ const Item = ({ info }) => {
                 <p className="card-price">ARS ${info.price}</p>
             </div>
             <div className="card-footer">
-                <button className="btn btn-primary">Comprar ahora</button>
+            <Link to={`/item/${info.id}`}><button className="btn btn-primary">Comprar ahora</button></Link>
                 <Link to={`/item/${info.id}`}><button className="btn btn-border">Más info</button></Link>
             </div>
         </div>

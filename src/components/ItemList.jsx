@@ -6,13 +6,13 @@ import Item from './Item'
 const ItemList = ({data = []}) => {
   return (     
 
-  <Container>
+
     <div className="containerCardItems">
     {
     data.map(objetos =>  <Item key={objetos.id} info={objetos} />)
 }
 </div>
-</Container>
+
   )
 }
 
